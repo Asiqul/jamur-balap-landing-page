@@ -2,7 +2,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
@@ -10,7 +9,9 @@ import Link from 'next/link';
 
 export const Navigation = ({ className }: { className?: string }) => {
   return (
-    <div className={`${className} flex flex-row items-center gap-4`}>
+    <div
+      className={`${className} hidden lg:flex lg:flex-row items-center gap-4`}
+    >
       <Link href="/">BERANDA</Link>
 
       <DropdownMenu>

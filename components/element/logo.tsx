@@ -15,10 +15,10 @@ export const Logo = () => {
         alt="logo"
         width={50}
         height={50}
-        className="rounded-full"
+        className="rounded-full w-8 h-8 sm:w-12 sm:h-12"
       />
       <span
-        className={`${breeSerif.className} text-2xl text-primary`}
+        className={`${breeSerif.className} text-xl sm:text-2xl text-primary`}
       >
         JamurBalap
       </span>
