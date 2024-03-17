@@ -11,6 +11,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
+import Image from 'next/image';
 
 const play = Play({
   subsets: ['latin'],
@@ -19,14 +20,14 @@ const play = Play({
 
 export const Header = () => {
   return (
-    <header className="bg-popover">
-      <div className="container mx-auto grid grid-cols-3 gap-2 items-center py-3 lg:flex lg:flex-row lg:justify-between lg:items-center">
+    <header className="bg-popover border-b-2">
+      <div className="container mx-auto py-4 flex flex-row justify-between items-center">
         <div className="text-start lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
-                className="text-primary rounded-full px-1.5 py-0"
+                className="text-primary rounded-xl px-1.5 py-0"
               >
                 <Menu />
               </Button>
@@ -47,7 +48,17 @@ export const Header = () => {
         <div className="text-center col-span-1">
           <Logo />
         </div>
-        <Navigation className={play.className} />
+
+        <div className="mr-2">
+          <Navigation className={play.className} />
+          <Image
+            src={'/icons/whatsapp.svg'}
+            width={38}
+            height={38}
+            alt="whatsapp me"
+            className="text-primary font-bold ml-1.5 cursor-pointer hover:bg-accent rounded-xl p-1.5 lg:hidden"
+          ></Image>
+        </div>
       </div>
     </header>
   );
