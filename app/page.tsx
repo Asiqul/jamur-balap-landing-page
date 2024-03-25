@@ -1,15 +1,18 @@
 import Banner from '@/fragments/banner';
 import Hero from '@/fragments/hero';
 import Image from 'next/image';
+import FarmProfileSection from '@/fragments/farmProfileSection';
+
 import {
   Signika_Negative,
   Sacramento,
   Catamaran,
 } from 'next/font/google';
+import HealthBenefitSection from '@/fragments/healthBenefitSection';
 
 const signika = Signika_Negative({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '500', '600'],
 });
 
 const sacramento = Sacramento({
@@ -55,6 +58,7 @@ export default function Home() {
       <section className="bg-popover pt-3">
         <Banner />
       </section>
+
       <section className="bg-popover py-16">
         <Hero
           signika={signika.className}
@@ -62,7 +66,8 @@ export default function Home() {
           catamaran={catamaran.className}
         />
       </section>
-      <div className="container mx-auto py-12">
+
+      <div className="container mx-auto py-16">
         <div className="flex flex-wrap justify-around lg:justify-center lg: gap-6 items-center">
           {mushroomList.map((mushroom) => (
             <div
@@ -88,6 +93,20 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <section className="bg-popover py-16">
+        <FarmProfileSection
+          signika={signika.className}
+          catamaran={catamaran.className}
+        />
+      </section>
+
+      <section className="container mx-auto py-16">
+        <HealthBenefitSection
+          signika={signika.className}
+          catamaran={catamaran.className}
+        />
+      </section>
     </main>
   );
 }
