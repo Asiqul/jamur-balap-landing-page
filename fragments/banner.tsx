@@ -71,7 +71,6 @@ const Banner = () => {
                 </h1>
                 <Button
                   variant={'outline'}
-                  // size={'lg'}
                   className="mt-4 text-md text-white hover:text-primary text-xs"
                 >
                   PESAN SEKARANG
