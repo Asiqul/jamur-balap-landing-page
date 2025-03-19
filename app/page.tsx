@@ -1,54 +1,50 @@
-import Banner from '@/fragments/banner';
-import Hero from '@/fragments/hero';
-import Image from 'next/image';
-import FarmProfileSection from '@/fragments/farmProfileSection';
+import Banner from "@/fragments/banner";
+import Hero from "@/fragments/hero";
+import Image from "next/image";
+import FarmProfileSection from "@/fragments/farmProfileSection";
 
-import {
-  Signika_Negative,
-  Sacramento,
-  Catamaran,
-} from 'next/font/google';
-import HealthBenefitSection from '@/fragments/healthBenefitSection';
+import { Signika_Negative, Sacramento, Catamaran } from "next/font/google";
+import HealthBenefitSection from "@/fragments/healthBenefitSection";
 
 const signika = Signika_Negative({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 const sacramento = Sacramento({
-  subsets: ['latin'],
-  weight: ['400'],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const catamaran = Catamaran({
-  subsets: ['latin'],
-  weight: ['200'],
+  subsets: ["latin"],
+  weight: ["200"],
 });
 
 const mushroomList = [
   {
     id: 1,
-    name: 'Agaric',
-    image: '/icons/mushroom_1.png',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique placeat explicabo recusandae, molestia.',
+    name: "Agaric",
+    image: "/icons/mushroom_1.png",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique placeat explicabo recusandae, molestia.",
   },
   {
     id: 2,
-    name: 'Champignon',
-    image: '/icons/mushroom_2.png',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique placeat explicabo recusandae.',
+    name: "Champignon",
+    image: "/icons/mushroom_2.png",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique placeat explicabo recusandae.",
   },
   {
     id: 3,
-    name: 'Russule',
-    image: '/icons/mushroom_3.png',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique placeat explicabo.',
+    name: "Russule",
+    image: "/icons/mushroom_3.png",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique placeat explicabo.",
   },
   {
     id: 4,
-    name: 'Chanterelle',
-    image: '/icons/mushroom_4.png',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similiq.',
+    name: "Chanterelle",
+    image: "/icons/mushroom_4.png",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similiq.",
   },
 ];
 
